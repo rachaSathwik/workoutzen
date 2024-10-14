@@ -1,0 +1,99 @@
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow img,
+.right-arrow img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.left-arrow:hover img,
+.right-arrow:hover img {
+    transform: scale(1.1);
+}
+
+.bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+
+}
+
+.exercise-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 445px;
+    background: #343434;
+    border-top: 4px solid hsl(252, 99%, 71%);
+    border-radius: 0 0 20px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.exercise-card img {
+    height: 326px;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 44px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: hsl(252, 99%, 71%);
+}
+
+.subtitle {
+    font-weight: bold;
+    font-family: 'Nerko One';
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: hsl(66, 84%, 67%);
+}
+
+.title,
+.subtitle {
+    padding: 20px;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
+.search-btn:hover {
+    color: hsl(66, 84%, 67%) !important;
+    border: 1px solid hsl(252, 99%, 71%) !important;
+  }
